@@ -4,5 +4,3 @@
 target/
 out/
 build/
-*.gradle
-
