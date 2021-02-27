@@ -12,7 +12,10 @@ public class Main {
     public static void main(String[] args) {
         String host = "0.0.0.0";
         int port = 8887;
-
+        if(args.length == 1){
+            Main.minepos = args[0];
+        }
+        
         WebSocketServer s = new SocketWorker(new InetSocketAddress(host, port));
         s.setConnectionLostTimeout(0);
         s.run();
