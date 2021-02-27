@@ -164,7 +164,8 @@ public HashMap<String, WebSocket> keyMap;
 
     @Override
     public void onStart() {
-        System.out.println("server started successfully");
+        System.out.println("Server started successfully");
+        System.out.println("  - Daemon Store: "+Main.minepos);
     }
 
 
